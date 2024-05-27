@@ -76,6 +76,7 @@ class _DatabaseState extends State<Database> {
                       name: _nameController.text,
                       age: int.parse(_ageController.text),
                     ));
+                //clear the textfield
                 _nameController.clear();
                 _ageController.clear();
               });
@@ -102,6 +103,7 @@ class _DatabaseState extends State<Database> {
               },
             ),
           ),
+          //clear all the data
           TextButton.icon(
               onPressed: () {
                 setState(() {
